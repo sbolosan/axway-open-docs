@@ -11,21 +11,21 @@ description: This section describes the main security features of the AWS API Ga
 
 The agents communicate to AWS API Gateway Manager, API Manager, APIGateway Manager, and AMPLIFY CENTRAL servers over TLS-encrypted HTTP connections by default. Except for AWS API Gateway Manager, the agents can be configured to enforce various TLS protocol versions. You can specify both a minimum and a maximum version. The default minimum version is TLS1.2, and the default maximum version is TLS1.3. Either of these values can be changed to one of the following: TLS1.0, TLS1.1, TLS1.2, TLS1.3. For additional information, see [Discovery Agent flags](/docs.axway.com/bundle/axway-open-docs/page/docs/central/connect-api-manager/discovery-agent-flags/).
 
-Agents can also be configured to use one or more specific SSL. The ciphers that are configured within the agents to be used by default are: 
+Agents can also be configured to use one or more specific SSL. The ciphers that are configured within the agents to be used by default are:
 
-TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
 
-TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
 
-TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305 
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305
 
-TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305 
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305
 
-TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
 
-TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 
-TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
 
 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
 
@@ -33,53 +33,53 @@ For additional information, see [Discovery Agent flags](/docs.axway.com/bundle/a
 
 The full list of cipher suites is extensive, and many may not be supported by the various servers. The cipher suites listed above are generally considered to be the most secure (at the time of this writing). Here is a full list of cipher suites that the agents allow for configuration:
 
-TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA 
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
 
-TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
 
-TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
 
-TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA 
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
 
-TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
 
-TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305 
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305
 
-TLS_ECDHE_ECDSA_WITH_RC4_128_SHA 
+TLS_ECDHE_ECDSA_WITH_RC4_128_SHA
 
-TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA 
+TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
 
-TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA 
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
 
-TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
 
-TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 
-TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA 
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
 
-TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
 
-TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305 
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305
 
-TLS_ECDHE_RSA_WITH_RC4_128_SHA 
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
 
-TLS_RSA_WITH_RC4_128_SHA 
+TLS_RSA_WITH_RC4_128_SHA
 
-TLS_RSA_WITH_3DES_EDE_CBC_SHA 
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
 
-TLS_RSA_WITH_AES_128_CBC_SHA 
+TLS_RSA_WITH_AES_128_CBC_SHA
 
-TLS_RSA_WITH_AES_128_CBC_SHA256 
+TLS_RSA_WITH_AES_128_CBC_SHA256
 
-TLS_RSA_WITH_AES_128_GCM_SHA256 
+TLS_RSA_WITH_AES_128_GCM_SHA256
 
-TLS_RSA_WITH_AES_256_CBC_SHA 
+TLS_RSA_WITH_AES_256_CBC_SHA
 
-TLS_RSA_WITH_AES_256_GCM_SHA384 
+TLS_RSA_WITH_AES_256_GCM_SHA384
 
-TLS_AES_128_GCM_SHA256 
+TLS_AES_128_GCM_SHA256
 
-TLS_AES_256_GCM_SHA384 
+TLS_AES_256_GCM_SHA384
 
 TLS_CHACHA20_POLY1305_SHA256
 
