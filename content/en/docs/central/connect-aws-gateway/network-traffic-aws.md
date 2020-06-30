@@ -23,8 +23,18 @@ All outbound traffic is sent over SSL via TCP / UDP.
 
 Open the following ports to benefit from all the Agent functionalities:
 
-* Outbound:
+**Outbound:**
 
-    * `443/tcp`: port for communication to AMPLIFY Central and AWS
+| Host                                       | Port               | Protocol  | Data                                |
+|--------------------------------------------|--------------------|-----------|-------------------------------------|
+| apicentral.axway.com                       | 443                | HTTPS     | API definitions, Subscription info  |
+| login.axway.com                            | 443                | HTTPS     | Authentication                      |
+| ingestion-lumberjack.datasearch.axway.com  | 453                | TCP       | API event data                      |
 
-    * `453/tcp`: port for all API event data
+**Inbound:**
+
+The docker container does not expose any ports outside of the container. Within the container the following listen:
+
+| Host                                       | Port               | Protocol  | Data                                |
+|--------------------------------------------|--------------------|-----------|-------------------------------------|
+| Docker Container                           | 8989 (default)     | HTTPS     |Serves the status of the agent and its dependencies for monitoring  |
