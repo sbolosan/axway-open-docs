@@ -23,7 +23,7 @@ All outbound traffic is sent over SSL via TCP / UDP.
 
 Open the following ports so that agents can communicate to the AMPLIFY platform:
 
-**Outbound:**
+**Outbound**:
 
 | Host                                       | Port               | Protocol  | Data                                |
 |--------------------------------------------|--------------------|-----------|-------------------------------------|
@@ -33,14 +33,14 @@ Open the following ports so that agents can communicate to the AMPLIFY platform:
 
 Other ports which may need to be opened so that the Agent may monitor API Gateway / Manager are:
 
-**Internal:**
+**Internal**:
 
 | Host                                       | Port               | Protocol  | Data                                |
 |--------------------------------------------|--------------------|-----------|-------------------------------------|
 | API Manager Host                           | 8075 (default)     | HTTPS     | API Discovery                       |
 | API Gateway Host                           | 8090 (default)     | HTTPS     | API Transaction Header data (see [APIGATEWAY GETHEADERS](/docs/central/traceability-agent-variables/))        |
 
-**Inbound (used for the agent status server):**
+**Inbound (used for the agent status server)**:
 
 | Host                                       | Port               | Protocol  | Data                                |
 |--------------------------------------------|--------------------|-----------|-------------------------------------|

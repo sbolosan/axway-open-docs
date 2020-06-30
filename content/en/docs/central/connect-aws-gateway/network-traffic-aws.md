@@ -23,7 +23,7 @@ All outbound traffic is sent over SSL via TCP / UDP.
 
 Open the following ports to benefit from all the Agent functionalities:
 
-**Outbound:**
+**Outbound**:
 
 | Host                                       | Port               | Protocol  | Data                                |
 |--------------------------------------------|--------------------|-----------|-------------------------------------|
@@ -31,7 +31,7 @@ Open the following ports to benefit from all the Agent functionalities:
 | login.axway.com                            | 443                | HTTPS     | Authentication                      |
 | ingestion-lumberjack.datasearch.axway.com  | 453                | TCP       | API event data                      |
 
-**Inbound:**
+**Inbound**:
 
 The docker container does not expose any ports outside of the container. Within the container the following listen:
 
