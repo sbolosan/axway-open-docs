@@ -60,4 +60,4 @@ Use a SOCKS5 Proxy for communication to the AMPLIFY Platform when sending API Tr
 
 ### Proxy authentication
 
-Both proxy types will use one or two authentication mechanisms, none and username/password authentication. The username authentication is specified within the URL `http://{user}:{pass}@{proxy}:{port}`.
+Both proxy types will use one of two authentication mechanisms, none or username/password authentication. The username authentication is specified within the URL `http://{user}:{pass}@{proxy}:{port}`.
